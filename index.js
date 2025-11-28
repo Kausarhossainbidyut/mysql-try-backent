@@ -8,12 +8,14 @@ app.use(cors());
 
 // MySQL Connection with better error handling
 const db = mysql.createPool({
-    host: "localhost",
+    host: "switchyard.proxy.rlwy.net",
     user: "root",
-    password: "bidyut", 
-    database: "crud_db"
-    // port: process.env.DB_PORT,
+    password: "retBAdAqUOQtvamKCBdBcfRtEgshLKCM", 
+    database: "railway",
+    port: 22384,
   });
+
+
 
 // CREATE
 app.post("/students", async(req, res) => {
